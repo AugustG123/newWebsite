@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
+    background-color: #f2f2f2;
+    color: #333333;
 }
 
 nav {
-    background-color: #28a745;
-    color: #fff;
+    background-color: #007bff;
+    color: #ffffff;
     padding: 10px;
 }
 
@@ -23,11 +23,11 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 h1 {
-    color: #333;
+    color: #333333;
 }
 
 form {
@@ -50,21 +50,21 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #28a745;
-    color: #fff;
+    background-color: #007bff;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #0056b3;
 }
 
 footer {
     margin-top: 20px;
-    background-color: #28a745;
-    color: #fff;
+    background-color: #007bff;
+    color: #ffffff;
     padding: 10px;
     text-align: center;
 }
