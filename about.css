@@ -41,3 +41,46 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+
+/* Styling individual sections */
+/* about.css */
+
+/* Styling individual sections */
+.person {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    margin-bottom: 20px; /* Add space between sections */
+    border: 2px solid #ccc; /* Add border */
+    padding: 20px; /* Add padding */
+    background-color: #f9f9f9; /* Background color for text */
+}
+
+/* Styling the images */
+.person img {
+    width: 500px; /* Adjust image width as needed */
+    margin-right: 20px; /* Add space between image and text */
+}
+
+/* Ensuring text doesn't exceed the width of the container */
+.person-info {
+    flex: 1; /* Allow text to take up remaining space */
+}
+
+/* Styling the name and email segments */
+.person-info h1 {
+    margin-bottom: 5px; /* Add some space between name and email */
+    font-size: 20px; /* Adjust font size as needed */
+    color: #333; /* Name and email color */
+}
+
+.person-info h1.email {
+    font-size: 16px; /* Adjust font size for email */
+    font-style: italic; /* Italicize email */
+    color: #666; /* Email color */
+}
+
+.person-info p {
+    margin: 0; /* Reset margin for paragraph */
+    font-size: 40px; 
+}
