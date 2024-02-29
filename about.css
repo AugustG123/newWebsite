@@ -84,3 +84,18 @@ footer {
     margin: 0; /* Reset margin for paragraph */
     font-size: 40px; 
 }
+.title-section {
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.title-section h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
