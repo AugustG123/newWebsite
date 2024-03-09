@@ -128,13 +128,11 @@ footer {
         font-size: 15px; /* Adjust font size as needed */
         color: #333; /* Name and email color */
     }
-    
     .person-info h1.email {
         font-size: 15px; /* Adjust font size for email */
         font-style: italic; /* Italicize email */
         color: #666; /* Email color */
     }
-    
     .person-info p {
         margin: 0; /* Reset margin for paragraph */
         font-size: 16px; 
