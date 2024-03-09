@@ -32,15 +32,6 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
 }
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav ul li {
-        margin: 10px 0; /* Adjust for vertical stacking */
-    }
-}
 h1 {
     color: #333333;
 }
@@ -114,4 +105,17 @@ footer {
     margin: 0;
     padding: 0; /* Remove or adjust padding */
     color: white;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0; /* Adjust for vertical stacking */
+    }
+    .person img {
+        width: 25%; /* Adjust image width as needed */
+        margin-right: 1%; /* Add space between image and text */
+    }
 }
