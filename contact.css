@@ -40,6 +40,7 @@ nav ul li a {
     }
     nav ul li {
         margin: 10px 0; /* Adjust for vertical stacking */
+        font-size: 1.5rem;
     }
 }
 h1 {
