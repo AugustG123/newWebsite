@@ -70,32 +70,33 @@ footer {
 /* Styling the name and email segments */
 .person-info h1 {
     margin-bottom: 5px; /* Add some space between name and email */
-    font-size: 20px; /* Adjust font size as needed */
+    font-size: 40px; /* Adjust font size as needed */
     color: #333; /* Name and email color */
 }
 
 .person-info h1.email {
-    font-size: 16px; /* Adjust font size for email */
+    font-size: 20px; /* Adjust font size for email */
     font-style: italic; /* Italicize email */
     color: #666; /* Email color */
 }
 
 .person-info p {
     margin: 0; /* Reset margin for paragraph */
-    font-size: 40px; 
+    font-size: 32px; 
 }
-.title-section {
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image */
+#title-section {
+    background-image: url('stock\ image.jpg');
+    height: 25vh;
+    margin-bottom: 0vh; /* Adjust or remove if not needed */
+    padding-top: 10vh; /* Adjust based on your design */
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 100px 0; /* Adjust padding as needed */
 }
-
-.title-section h1 {
-    font-size: 36px;
+#title {
+    font-size: 5rem; /* Adjust this value as needed */
     margin: 0;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 0; /* Remove or adjust padding */
+    color: white;
 }

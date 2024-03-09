@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #f6f6f6;
     color: #333333;
 }
 
@@ -23,7 +23,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #f2f2f2;
 }
 
 h1 {
@@ -68,18 +68,30 @@ footer {
     padding: 10px;
     text-align: center;
 }
-.title-section {
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image */
+#title-section {
+    background-image: url('stock\ image.jpg');
+    height: 25vh;
+    margin-bottom: 0vh; /* Adjust or remove if not needed */
+    padding-top: 10vh; /* Adjust based on your design */
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 100px 0; /* Adjust padding as needed */
 }
-
-.title-section h1 {
-    font-size: 36px;
+#title {
+    font-size: 5rem; /* Adjust this value as needed */
     margin: 0;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 0; /* Remove or adjust padding */
+    color: white;
+}
+#formContainer{
+    padding-left: 25%;
+    padding-right: 25%;
+    height: 2500px;
+    width:100%;
+}
+#form{
+    width: 50%;
+    height: 100%;
+    border-width: 0;
 }
