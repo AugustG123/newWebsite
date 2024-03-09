@@ -114,5 +114,10 @@ footer {
         height: 100%;
         border-width: 0;
     }
-
+    #formContainer{
+        padding-left: 0%;
+        padding-right: 0%;
+        height: 2500px;
+        width:100%;
+    }
 }
