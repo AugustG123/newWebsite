@@ -40,6 +40,12 @@ nav ul li a {
     nav ul li {
         margin: 10px 0; /* Adjust for vertical stacking */
     }
+    #form{
+        width: 100%;
+        height: 100%;
+        border-width: 0;
+    }
+
 }
 h1 {
     color: #333333;
