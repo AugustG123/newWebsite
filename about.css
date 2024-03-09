@@ -114,8 +114,29 @@ footer {
     nav ul li {
         margin: 10px 0; /* Adjust for vertical stacking */
     }
+    .person {
+        flex-direction: column; /* Stack children vertically */
+        text-align: center; /* Center-align the content for a better look on mobile */
+    }
+
     .person img {
-        width: 25%; /* Adjust image width as needed */
-        margin-right: 1%; /* Add space between image and text */
+        margin: 0 auto 20px; /* Center image and add space below before the name */
+        width: 80px; /* Optional: adjust image size for mobile */
+    }
+    .person-info h1 {
+        margin-bottom: 2.5px; /* Add some space between name and email */
+        font-size: 20px; /* Adjust font size as needed */
+        color: #333; /* Name and email color */
+    }
+    
+    .person-info h1.email {
+        font-size: 10px; /* Adjust font size for email */
+        font-style: italic; /* Italicize email */
+        color: #666; /* Email color */
+    }
+    
+    .person-info p {
+        margin: 0; /* Reset margin for paragraph */
+        font-size: 32px; 
     }
 }
