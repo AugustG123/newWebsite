@@ -115,6 +115,10 @@ footer {
     nav ul li {
         margin: 10px 0; /* Adjust for vertical stacking */
         font-size: 1.25rem;
+        padding-top: 0.625em;
+        padding-bottom: 0.625em;
+        padding-left: 0.325em;
+        padding-right: 0.325em;
     }
     .person {
         flex-direction: column; /* Stack children vertically */
