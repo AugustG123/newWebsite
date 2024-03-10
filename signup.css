@@ -150,9 +150,9 @@ footer {
         border-width: 0;
     }
     #formContainer{
-        padding-left: 0%;
-        padding-right: 0%;
+        padding: auto;
         height: 1200px;
         width:100%;
+        align-items: center;
     }
 }
