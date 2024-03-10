@@ -131,3 +131,28 @@ footer {
         width:100%;
     }
 }
+@media (max-width: 1048px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0; /* Adjust for vertical stacking */
+        font-size: 1rem;
+        padding-top: 0.625em;
+        padding-bottom: 0.625em;
+        padding-left: 0.325em;
+        padding-right: 0.325em;
+    }
+    #form{
+        width: 75%;
+        height: 100%;
+        border-width: 0;
+    }
+    #formContainer{
+        padding-left: 0%;
+        padding-right: 0%;
+        height: 1200px;
+        width:100%;
+    }
+}
