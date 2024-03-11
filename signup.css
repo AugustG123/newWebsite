@@ -96,8 +96,9 @@ footer {
     color: white;
 }
 #formContainer{
-    padding: auto;
-    height: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    height: 2400px;
     width:100%;
 }
 #form{
@@ -149,8 +150,9 @@ footer {
         border-width: 0;
     }
     #formContainer{
-        padding: auto;
-        height: 100%;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+        height: 1200px;
         width:100%;
         align-items: center;
     }
