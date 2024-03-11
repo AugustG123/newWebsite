@@ -30,7 +30,7 @@ nav ul li {
     padding-top: 0.625em;
     padding-bottom: 0.625em;
     padding-left: 0.325em;
-    padding-right: 0.325em;
+    padding-right: 0.325em; 
 }
 
 nav ul li a {
@@ -83,14 +83,14 @@ footer {
     background-image: url('stock\ image.jpg');
     height: 25vh;
     margin-bottom: 0vh; /* Adjust or remove if not needed */
-    padding-top: 10vh; /* Adjust based on your design */
+    padding: auto; /* Adjust based on your design */
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
 }
 #title {
-    font-size: 5rem; /* Adjust this value as needed */
+    font-size: 10vw; /* Adjust this value as needed */
     margin: 0;
     padding: 0; /* Remove or adjust padding */
     color: white;
