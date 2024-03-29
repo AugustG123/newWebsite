@@ -57,6 +57,11 @@ footer {
     background-position: center;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    
 }
 #title {
     font-size: 10vw; /* Adjust this value as needed */

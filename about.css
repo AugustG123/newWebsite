@@ -99,11 +99,14 @@ footer {
     background-image: url('stock\ image.jpg');
     height: 25vh;
     margin-bottom: 0vh; /* Adjust or remove if not needed */
-    padding: auto;/* Adjust based on your design */
+    padding: auto; /* Adjust based on your design */
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 #title {
     font-size: 10vw; /* Adjust this value as needed */
