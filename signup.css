@@ -99,15 +99,43 @@ footer {
     color: white;
 }
 #formContainer{
-    padding-left: 25%;
-    padding-right: 25%;
-    height: 2400px;
     width:100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Use at least the full height of the viewport */
+
 }
-#form{
-    width: 50%;
-    height: 100%;
-    border-width: 0;
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Use the full width up to the max-width */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
 }
 @media (max-width: 768px) {
     nav ul {

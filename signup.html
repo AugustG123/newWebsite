@@ -24,9 +24,50 @@
 <h1>Sign Up</h1>
 
 <!-- Embedded Google Form -->
-<div id = "formContainer">
-    <iframe id = "form" src="https://forms.gle/sobAputK5T8TRVpWA"></iframe>
+<div id="formContainer">
+    <form action="https://formcarry.com/s/SCEqY8kWYgT" method="POST"> 
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" name="grade" required>
+    
+        <fieldset>
+            <legend>Select the subjects you need help with:</legend>
+            <label><input type="checkbox" name="subjects[]" value="Math"> Math</label>
+            <label><input type="checkbox" name="subjects[]" value="Science"> Science</label>
+            <label><input type="checkbox" name="subjects[]" value="English"> English</label>
+            <label><input type="checkbox" name="subjects[]" value="History"> History</label>
+        </fieldset>
+    
+    
+        <label for="description">Describe what you/your student needs help with (e.g., "I am in Pre-Calculus and need help with Permutations homework."):</label>
+        <textarea id="description" name="description" required></textarea>
+    
+        <label for="materials">Are you bringing any materials such as homework or a textbook with you? (Recommended):</label>
+        <input type="text" id="materials" name="materials" required>
+    
+        <fieldset>
+            <legend>Select the times you are available(This doesn't always mean you will be tutored for all of these times):</legend>
+            <label><input type="checkbox" name="subjects[]" value="Saturday 2:00-3:00"> Saturday 2:00-3:00</label>
+            <label><input type="checkbox" name="subjects[]" value="Saturday 3:00-4:00"> Saturday 3:00-4:00</label>
+            <label><input type="checkbox" name="subjects[]" value="Sunday 2:00-3:00"> Sunday 2:00-3:00</label>
+            <label><input type="checkbox" name="subjects[]" value="Sunday 3:00-4:00"> Sunday 3:00-4:00</label>
+        </fieldset>    
+    
+        <!-- The following line helps prevent spam submissions -->
+        <input type="hidden" name="_captcha" value="false">
+    
+        <button type="submit">Send</button>
+    </form>
 </div>
+
 
 <footer>
     <a href="about.html">About Us</a>
