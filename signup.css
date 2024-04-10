@@ -30,12 +30,12 @@ nav ul li {
     padding-top: 0.625em;
     padding-bottom: 0.625em;
     padding-left: 0.325em;
-    padding-right: 0.325em; 
+    padding-right: 0.325em;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #f2f2f2;
+    color: #ffffff;
 }
 h1 {
     color: #333333;
@@ -107,7 +107,7 @@ footer {
     margin-bottom: 5%;
 }
 form {
-    max-width: 600px;
+    max-width: 700px;
     margin: 20px auto;
     padding: 10px;
     border: 1px solid #ccc;
@@ -142,26 +142,17 @@ button[type="submit"]:hover {
 @media (max-width: 1048px) {
     
     form {
-        width: 75%; /* Adjust the form width on smaller screens to 75% of its container */
+        width: 75%;
+        max-width: 700px; /* Adjust the form width on smaller screens to 75% of its container */
         margin: 20px auto; /* Keep the form centered */
         /* Add any additional styling for the form here */
     }
 
     /* Adjust the form elements to be more responsive */
-    input[type="text"], input[type="email"], textarea {
-        /* If needed, adjust padding or font sizes for smaller screens */
-    }
-
-    button[type="submit"] {
-        /* If needed, adjust padding or sizes for the submit button on smaller screens */
-    }
 }
 
 /* If you have specific styles for even smaller screens, you can add another media query */
 @media (max-width: 768px) {
-    #formContainer {
-        padding: 20px;
-    }
     form {
         margin: 20px auto;
         padding: 0px;
@@ -181,5 +172,22 @@ button[type="submit"]:hover {
         width: 100%; /* Full-width button for easier tapping on touch devices */
     }
 
+    #formContainer{
+        width:100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        min-height: 100vh; 
+        margin-bottom: 5%;
+    }
+    form {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 90%; /* Use the full width up to the max-width */
+        box-sizing: border-box; /* Include padding in the element's total width and height */
+    }
     /* Adjustments for form elements if needed */
 }
