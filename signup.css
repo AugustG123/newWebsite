@@ -140,11 +140,7 @@ button[type="submit"]:hover {
 /* Other styles remain unchanged */
 
 @media (max-width: 1048px) {
-    #formContainer {
-        /* Adjust the container for smaller screens if needed. 
-           If the form is already centered with flexbox, you might not need to change this. */
-    }
-
+    
     form {
         width: 75%; /* Adjust the form width on smaller screens to 75% of its container */
         margin: 20px auto; /* Keep the form centered */
@@ -163,9 +159,26 @@ button[type="submit"]:hover {
 
 /* If you have specific styles for even smaller screens, you can add another media query */
 @media (max-width: 768px) {
+    #formContainer {
+        padding: 20px;
+    }
     form {
-        width: 90%; /* For very small screens, you might want to increase the width of the form */
-        /* Adjust other form styles as necessary */
+        margin: 20px auto;
+        padding: 0px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 80%; /* Use the full width up to the max-width */
+        max-width: 600px;
+        box-sizing: border-box; /* Include padding in the element's total width and height */
+    }
+
+    label {
+        display: block; /* Ensure labels are above inputs */
+        margin-bottom: 5px;
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Full-width button for easier tapping on touch devices */
     }
 
     /* Adjustments for form elements if needed */
