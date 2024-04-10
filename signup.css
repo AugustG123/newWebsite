@@ -140,29 +140,37 @@ button[type="submit"]:hover {
 /* Other styles remain unchanged */
 
 @media (max-width: 1048px) {
-    
-    form {
-        width: 75%;
-        max-width: 700px; /* Adjust the form width on smaller screens to 75% of its container */
-        margin: 20px auto; /* Keep the form centered */
-        /* Add any additional styling for the form here */
+    label {
+        display: block; /* Ensure labels are above inputs */
+        margin-bottom: 5px;
     }
 
+    input[type="submit"] {
+        width: 100%; /* Full-width button for easier tapping on touch devices */
+    }
+
+    #formContainer{
+        width:100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        min-height: 100vh; 
+        margin-bottom: 5%;
+    }
+    form {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 90%; /* Use the full width up to the max-width */
+        box-sizing: border-box; /* Include padding in the element's total width and height */
+    }
     /* Adjust the form elements to be more responsive */
 }
 
 /* If you have specific styles for even smaller screens, you can add another media query */
 @media (max-width: 768px) {
-    form {
-        margin: 20px auto;
-        padding: 0px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        width: 80%; /* Use the full width up to the max-width */
-        max-width: 600px;
-        box-sizing: border-box; /* Include padding in the element's total width and height */
-    }
-
     label {
         display: block; /* Ensure labels are above inputs */
         margin-bottom: 5px;
