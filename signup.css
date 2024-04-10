@@ -101,28 +101,28 @@ footer {
 #formContainer{
     width:100%;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    min-height: 100vh; /* Use at least the full height of the viewport */
-
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh; 
+    margin-bottom: 5%;
 }
 form {
     max-width: 600px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%; /* Use the full width up to the max-width */
     box-sizing: border-box; /* Include padding in the element's total width and height */
-
 }
 
 input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%; /* Full width of the parent container */
+    padding: 10px; /* Adjust padding as needed */
+    margin-bottom: 10px; /* Space between the inputs */
+    border: 1px solid #ccc; /* Border styling, adjust as needed */
+    border-radius: 4px; /* Rounded corners, adjust as needed */
+    box-sizing: border-box; /* Important: Include padding and border in the element's total width and height */
 }
 
 button[type="submit"] {
@@ -137,54 +137,36 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+/* Other styles remain unchanged */
+
+@media (max-width: 1048px) {
+    #formContainer {
+        /* Adjust the container for smaller screens if needed. 
+           If the form is already centered with flexbox, you might not need to change this. */
     }
-    nav ul li {
-        margin: 10px 0; /* Adjust for vertical stacking */
-        font-size: 1rem;
-        padding-top: 0.625em;
-        padding-bottom: 0.625em;
-        padding-left: 0.325em;
-        padding-right: 0.325em;
+
+    form {
+        width: 75%; /* Adjust the form width on smaller screens to 75% of its container */
+        margin: 20px auto; /* Keep the form centered */
+        /* Add any additional styling for the form here */
     }
-    #form{
-        width: 100%;
-        height: 100%;
-        border-width: 0;
+
+    /* Adjust the form elements to be more responsive */
+    input[type="text"], input[type="email"], textarea {
+        /* If needed, adjust padding or font sizes for smaller screens */
     }
-    #formContainer{
-        padding-left: 0%;
-        padding-right: 0%;
-        height: 1200px;
-        width:100%;
+
+    button[type="submit"] {
+        /* If needed, adjust padding or sizes for the submit button on smaller screens */
     }
 }
-@media (max-width: 1048px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+
+/* If you have specific styles for even smaller screens, you can add another media query */
+@media (max-width: 768px) {
+    form {
+        width: 90%; /* For very small screens, you might want to increase the width of the form */
+        /* Adjust other form styles as necessary */
     }
-    nav ul li {
-        margin: 10px 0; /* Adjust for vertical stacking */
-        font-size: 1rem;
-        padding-top: 0.625em;
-        padding-bottom: 0.625em;
-        padding-left: 0.325em;
-        padding-right: 0.325em;
-    }
-    #form{
-        width: 75%;
-        height: 100%;
-        border-width: 0;
-    }
-    #formContainer{
-        padding-left: 12.5%;
-        padding-right: 12.5%;
-        height: 1200px;
-        width:100%;
-        align-items: center;
-    }
+
+    /* Adjustments for form elements if needed */
 }

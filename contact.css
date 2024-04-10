@@ -20,11 +20,12 @@ form {
 }
 
 input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%; /* Full width of the parent container */
+    padding: 10px; /* Adjust padding as needed */
+    margin-bottom: 10px; /* Space between the inputs */
+    border: 1px solid #ccc; /* Border styling, adjust as needed */
+    border-radius: 4px; /* Rounded corners, adjust as needed */
+    box-sizing: border-box; /* Important: Include padding and border in the element's total width and height */
 }
 
 button[type="submit"] {
