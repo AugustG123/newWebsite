@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     color: #333333;
 }
 
@@ -125,6 +125,7 @@ footer {
 #title-section {
     height: 25vh;
     width: 100%;
+    background-image: url("images/stock\ image.jpg");
     margin-bottom: 0vh; /* Adjust or remove if not needed */
     padding: auto; /* Adjust based on your design */
     background-size: cover;
@@ -133,7 +134,7 @@ footer {
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color:#f2f2f2;
+    background-color:#ffffff;
     border-color: gray;
     border-width: 0px;
     border-style: solid;
@@ -157,12 +158,15 @@ footer {
     border-color: black;
 }
 #title {
-    font-size: 10rem; /* Adjust this value as needed */
+    font-size: 8rem; /* Adjust this value as needed */
     margin: 0;
     padding: 0; /* Remove or adjust padding */
-    color: #007bff;
-    margin-top: -1%;
+    color: #ffffff;
+    margin-top: -0%;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Use a heavier weight for titles */
+
 }
 .content {
     padding-left: 1vh; /* Removes default margin */
