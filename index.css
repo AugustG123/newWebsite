@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-    background-color: #007bff;
+    background-color: #000000;
     color: #ffffff;
     padding: 10px;
 }
@@ -21,6 +21,10 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+nav ul li:hover {
+  background-color: #007bffaf;
 }
 
 nav ul li {
@@ -45,12 +49,35 @@ p {
 h1{
     text-align: center;
 }
+#TitleNav {
+    border-width: 5px;
+    border-color: #000000;
+    border-radius: 5px;
+    border-style: solid;
+
+}
 #message{
     border-width: 5px;
     border-color: #007bff;
     border-radius: 5px;
     border-top-style: solid;
     background-color: #007bff1a;
+    padding: 3vh;
+    flex-direction:row;
+    font-size: 2vw;
+    color: black;
+}
+#messageTitle {
+    padding: 3vh;
+    flex-direction:row;
+    font-size: 2vw;
+    color: black;
+}
+#pContent {
+    padding: 3vh;
+    flex-direction:row;
+    font-size: 2vw;
+    color: black;
 }
 #lr{
     width:100%;
@@ -86,7 +113,7 @@ h1{
 #content{
     padding: 3vh;
     flex-direction:row;
-    font-size: 2rem;
+    font-size: 2vw;
     color: black;
 }
 footer {
@@ -97,31 +124,139 @@ footer {
     text-align: center;
 }
 #title-section {
-    background-image: url('stock\ image.jpg');
     height: 25vh;
+    width: 100%;
     margin-bottom: 0vh; /* Adjust or remove if not needed */
     padding: auto; /* Adjust based on your design */
     background-size: cover;
     background-position: center;
     color: white;
-    text-align: center;
+    justify-content: center;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-
-    
+    background-color:#f2f2f2;
+    border-color: gray;
+    border-width: 0px;
+    border-style: solid;
+}
+#logo {
+    height: 100%;
+    width: 76%;
+}
+#textCont {
+    width: 70%;
+    height: 95%;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+}
+#imageCont {
+    width: 15%;
+    height: 95%;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
 }
 #title {
     font-size: 10vw; /* Adjust this value as needed */
     margin: 0;
     padding: 0; /* Remove or adjust padding */
-    color: white;
+    color: #007bff;
+    text-align: center;
 }
 .content {
     padding-left: 1vh; /* Removes default margin */
     padding-right: 1vh;
 }
  
+.column {
+    float: left;
+    width: 25%;
+    padding: 0px;
+  }
+  
+* {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+    width: 90%;
+    /*max-width: 1000px;*/
+    height: 40vw;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0px;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+/* Initial state: hidden and slightly moved up */
+/* Initial state: hidden and slightly moved up */
+.element-to-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* State after scrolling into view */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -134,5 +269,11 @@ footer {
         padding-bottom: 0.625em;
         padding-left: 0.325em;
         padding-right: 0.325em;
+    }
+    #content{
+        padding: 3vh;
+        flex-direction:row;
+        font-size: 4vw;
+        color: black;
     }
 }

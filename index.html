@@ -8,36 +8,82 @@
     <title>Five Tutoring - Services</title>
 </head>
 <body>
+    <div id = "TitleNav">
     <div id="title-section">
-        <h1 id="title">
-            Five Tutoring
-        </h1>
+        <div id = "imageCont">
+            <img id = "logo" src="images/LOGO.png" alt="Our Logo">
+        </div>
+        <div id = "textCont">
+            <h1 id="title">
+                Five Tutoring
+            </h1>
+        </div>
     </div>
 <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
+        <li style = "font-weight: bold;"><a href="index.html">Home</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="signup.html">Sign Up</a></li>
     </ul>
 </nav>
+</div>
+
 <div id="content">
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="images/stock image.jpg" style="width:100%; height: 40vw;">
+          <div class="text">
+            <h1>
+                What we Believe
+            </h1>
+            <p> We strongly believe that everyone deserves supplementary education.</p>
+          </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="images/stockImage2.jpg" style="width:100%;  height: 40vw;">
+          <div class="text">
+            <h1> What we offer</h1>
+            <p> We offer extensive lessons plans </p>
+            </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="images/stockImage3.jpg" style="width:100%;  height: 40vw;">
+          <div class="text">
+            <h1> Why us?</h1>
+            <p>
+                We serve plenty of happy students and have significant tutoring qualifications.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
 <div id ='top'>
-<h1 class="content">Our Message</h1>
-<p id = 'message' class='content'>We are a group of students enrolled in the Math, Science, and Technology Center at Paul Laurence Dunbar High School. We all take academics seriously and aim to use our knowledge to help students excel in school. We believe that every student deserves the opportunity to receive high-quality co-curricular education and because of this we offer our tutoring services at the competitive price of $13 per hour.  Students will receive one-on-one tutoring with personalized lessons catered to their needs. All funds are used to maintain and improve our business, and any excess money is donated to the Dance Blue charity, supporting cancer research. Ultimately, we aim to battle cancer by helping students learn the skills they need to succeed in school
+<h1 id = 'messageTitle' class="element-to-fade">Our Message</h1>
+<p id = 'message' class='element-to-fade'>We are a group of students enrolled in the Math, Science, and Technology Center at Paul Laurence Dunbar High School. We all take academics seriously and aim to use our knowledge to help students excel in school. We believe that every student deserves the opportunity to receive high-quality co-curricular education and because of this we offer our tutoring services at the competitive price of $13 per hour.  Students will receive one-on-one tutoring with personalized lessons catered to their needs. All funds are used to maintain and improve our business, and any excess money is donated to the Dance Blue charity, supporting cancer research. Ultimately, we aim to battle cancer by helping students learn the skills they need to succeed in school
 </p>
 </div>
 <div id = 'lr'>
 <div id = 'left'>
-    <p class='content'>
+    <p id = 'pContent' class='element-to-fade'>
         Lessons every Saturday, Sunday and throughout the week as well!
     </p>
-    <p class='content'>
+    <p id = 'pContent' class='element-to-fade'>
         Cost: First session free. $13 per hour 
     </p>
 </div>
 <div id = 'right'>
-    <p class = "content">
+    <p class = "element-to-fade">
         Subjects Offered: 
         Math, 
         Science, 
@@ -52,6 +98,56 @@
 </div>
 </div>
 
+<div id = "review">
+    <h1>
+        What people have been saying about us
+    </h1>
+
 </div>
+
+</div>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+            }
+        });
+    }, { threshold: 0.1 }); // Adjust threshold based on when you want the fade to start
+
+    // Target elements to fade in
+    document.querySelectorAll('.element-to-fade').forEach((element) => {
+        observer.observe(element);
+    });
+});
+
+</script>
+
 </body>
 </html>
