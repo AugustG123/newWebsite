@@ -10,9 +10,8 @@ body {
     background-color: #f6f6f6;
     color: #333333;
 }
-
 nav {
-    background-color: #007bff;
+    background-color: rgba(0, 0, 0, 1);
     color: #ffffff;
     padding: 10px;
 }
@@ -23,19 +22,69 @@ nav ul {
     padding: 0;
 }
 
+nav ul li:hover {
+  background-color: #007bffaf;
+}
+
 nav ul li {
     display: inline;
     margin-right: 20px;
-    font-size: 1.5rem;
     padding-top: 0.625em;
     padding-bottom: 0.625em;
     padding-left: 0.325em;
     padding-right: 0.325em;
+    font-size: 1.5rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
+}
+#title-section {
+    height: 25vh;
+    width: 100%;
+    background-image: url("images/stock\ image.jpg");
+    margin-bottom: 0vh; /* Adjust or remove if not needed */
+    padding: auto; /* Adjust based on your design */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:#ffffff;
+    border-color: gray;
+    border-width: 0px;
+    border-style: solid;
+}
+#logo {
+    height: 100%;
+    width: 76%;
+}
+#textCont {
+    width: 70%;
+    height: 95%;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+}
+#imageCont {
+    width: 15%;
+    height: 95%;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+}
+#title {
+    font-size: 8rem; /* Adjust this value as needed */
+    margin: 0;
+    padding: 0; /* Remove or adjust padding */
+    color: #ffffff;
+    margin-top: -0%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Use a heavier weight for titles */
+
 }
 h1 {
     color: #333333;
@@ -78,25 +127,6 @@ footer {
     color: #ffffff;
     padding: 10px;
     text-align: center;
-}
-#title-section {
-    background-image: url('images/stock\ image.jpg');
-    height: 25vh;
-    margin-bottom: 0vh; /* Adjust or remove if not needed */
-    padding: auto; /* Adjust based on your design */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-}
-#title {
-    font-size: 10vw; /* Adjust this value as needed */
-    margin: 0;
-    padding: 0; /* Remove or adjust padding */
-    color: white;
 }
 #formContainer{
     width:100%;

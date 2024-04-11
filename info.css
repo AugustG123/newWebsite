@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: #333333; 
+    color: #333333;
 }
 
 nav {
@@ -41,6 +41,53 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
 }
+#title-section {
+    height: 25vh;
+    width: 100%;
+    background-image: url("images/stock\ image.jpg");
+    margin-bottom: 0vh; /* Adjust or remove if not needed */
+    padding: auto; /* Adjust based on your design */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:#ffffff;
+    border-color: gray;
+    border-width: 0px;
+    border-style: solid;
+}
+#logo {
+    height: 100%;
+    width: 76%;
+}
+#textCont {
+    width: 70%;
+    height: 95%;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+}
+#imageCont {
+    width: 15%;
+    height: 95%;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+}
+#title {
+    font-size: 8rem; /* Adjust this value as needed */
+    margin: 0;
+    padding: 0; /* Remove or adjust padding */
+    color: #ffffff;
+    margin-top: -0%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Use a heavier weight for titles */
+
+}
+
 p {
     line-height: 1.5;
     text-align: center;
@@ -112,139 +159,6 @@ h1{
     font-size: 2vw;
     color: black;
 }
-footer {
-    margin-top: 20px;
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-}
-#title-section {
-    height: 25vh;
-    width: 100%;
-    background-image: url("images/stock\ image.jpg");
-    margin-bottom: 0vh; /* Adjust or remove if not needed */
-    padding: auto; /* Adjust based on your design */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background-color:#ffffff;
-    border-color: gray;
-    border-width: 0px;
-    border-style: solid;
-}
-#logo {
-    height: 100%;
-    width: 76%;
-}
-#textCont {
-    width: 70%;
-    height: 95%;
-    border-style: solid;
-    border-width: 0px;
-    border-color: black;
-}
-#imageCont {
-    width: 15%;
-    height: 95%;
-    border-style: solid;
-    border-width: 0px;
-    border-color: black;
-}
-#title {
-    font-size: 8rem; /* Adjust this value as needed */
-    margin: 0;
-    padding: 0; /* Remove or adjust padding */
-    color: #ffffff;
-    margin-top: -0%;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700; /* Use a heavier weight for titles */
-
-}
-.content {
-    padding-left: 1vh; /* Removes default margin */
-    padding-right: 1vh;
-}
- 
-.column {
-    float: left;
-    width: 25%;
-    padding: 0px;
-  }
-  
-* {box-sizing:border-box}
-
-  /* Slideshow container */
-  .slideshow-container {
-    width: 90%;
-    /*max-width: 1000px;*/
-    height: 40vw;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: #007bffaf;
-  }
-  
-  /* Caption text */
-  .text {
-    color: white;
-    font-size: 15px;
-    padding: 8px 12px;
-    background-color: rgba(0, 0, 0, 0.466);
-    position: absolute;
-    bottom: 0px;
-    width: 30%;
-    height: 100%;
-    text-align: center;
-  }
-  
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-/* Initial state: hidden and slightly moved up */
-/* Initial state: hidden and slightly moved up */
 
 #reviewCont{
     width:100%;
