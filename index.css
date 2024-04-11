@@ -48,13 +48,10 @@ p {
 
 h1{
     text-align: center;
+    font-size: 3rem;
 }
 #TitleNav {
-    border-width: 5px;
-    border-color: #000000;
-    border-radius: 5px;
-    border-style: solid;
-
+    
 }
 #message{
     border-width: 5px;
@@ -83,27 +80,29 @@ h1{
     width:100%;
     height: 50vh;
     padding: 0%;
-    
+    margin-bottom: 5%;
 }
 #left{
-    width: 44%;
+    width: 49%;
     margin-top: 5vh;
     border-width: 5px;
     border-color: #007bff;
     border-radius: 5px;
     border-top-style: solid;
     float: left;
+    margin-left: 0%;
     display: inline-block;
     background-color: #007bff1a;
     color: black;
 }
 #right{
-    width: 44%;
+    width: 49%;
     margin-top: 5vh;
     border-width: 5px;
     border-color: #007bff;
     background-color: #007bff1a;
     border-radius: 5px;
+    margin-right: 0%;
     border-top-style: solid;
     display: inline-block;
     float: right;
@@ -157,7 +156,7 @@ footer {
     border-color: black;
 }
 #title {
-    font-size: 10vw; /* Adjust this value as needed */
+    font-size: 10rem; /* Adjust this value as needed */
     margin: 0;
     padding: 0; /* Remove or adjust padding */
     color: #007bff;
@@ -189,7 +188,6 @@ footer {
   .mySlides {
     display: none;
   }
-  
   /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
@@ -244,6 +242,28 @@ footer {
   
 /* Initial state: hidden and slightly moved up */
 /* Initial state: hidden and slightly moved up */
+
+#reviewCont{
+    width:100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#review {
+    border-style: solid;
+    border-color: #007bff;
+    border-width: 5px;
+    border-radius: 15px;
+    background-color: #007bff1a;
+    height: 80%;
+    text-align: center;
+    color: black;
+    padding: auto;
+    width: 70%;
+}
+
 .element-to-fade {
     opacity: 0;
     transform: translateY(20px);
