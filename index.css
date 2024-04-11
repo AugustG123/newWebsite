@@ -131,6 +131,7 @@ footer {
     background-position: center;
     color: white;
     justify-content: center;
+    align-items: center;
     display: flex;
     background-color:#f2f2f2;
     border-color: gray;
@@ -160,6 +161,7 @@ footer {
     margin: 0;
     padding: 0; /* Remove or adjust padding */
     color: #007bff;
+    margin-top: -1%;
     text-align: center;
 }
 .content {
