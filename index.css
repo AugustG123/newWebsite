@@ -39,8 +39,56 @@ nav ul li a {
 }
 p {
     line-height: 1.5;
+    text-align: center;
 }
 
+h1{
+    text-align: center;
+}
+#message{
+    border-width: 5px;
+    border-color: #007bff;
+    border-radius: 5px;
+    border-top-style: solid;
+    background-color: #007bff1a;
+}
+#lr{
+    width:100%;
+    height: 50vh;
+    padding: 0%;
+    
+}
+#left{
+    width: 44%;
+    margin-top: 5vh;
+    border-width: 5px;
+    border-color: #007bff;
+    border-radius: 5px;
+    border-top-style: solid;
+    float: left;
+    display: inline-block;
+    background-color: #007bff1a;
+    color: black;
+}
+#right{
+    width: 44%;
+    margin-top: 5vh;
+    border-width: 5px;
+    border-color: #007bff;
+    background-color: #007bff1a;
+    border-radius: 5px;
+    border-top-style: solid;
+    display: inline-block;
+    float: right;
+    text-align: right;
+    color: black;
+}
+#content{
+    padding: 3vh;
+    flex-direction:row;
+    font-size: 2rem;
+    color: black;
+}
 footer {
     margin-top: 20px;
     background-color: #007bff;
