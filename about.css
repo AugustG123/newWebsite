@@ -58,22 +58,28 @@ nav ul li a {
     border-style: solid;
 }
 #logo {
-    height: 100%;
-    width: 76%;
+    height: auto; /* Adjust height automatically based on the width */
+    width: 76%; /* Maintain the width percentage as specified */
+    object-fit: contain; /* Ensure the logo scales properly within the dimensions */
+    max-height: 100%; /* Prevent the logo from exceeding the container's height */
 }
 #textCont {
     width: 70%;
     height: 95%;
-    border-style: solid;
-    border-width: 0px;
-    border-color: black;
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+}
+#space{
+    height: 95%;
+    width: 15%;
 }
 #imageCont {
     width: 15%;
     height: 95%;
-    border-style: solid;
-    border-width: 0px;
-    border-color: black;
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
 }
 #title {
     font-size: 8rem; /* Adjust this value as needed */
@@ -187,4 +193,76 @@ footer {
         margin: 0; /* Reset margin for paragraph */
         font-size: 24px; 
     }
+}
+@media (max-width: 1024px) {
+    #title {
+        font-size: 5rem; /* Smaller font size for the title on smaller desktops and tablets */
+    }
+    #content, #left, #right {
+        font-size: 1.5rem; /* Larger font size for better readability */
+    }
+    #logo {
+        width: 90%; /* Make the logo larger to be more visible */
+    }
+    nav ul li {
+        font-size: 1.2rem; /* Increase the font size for navigation links */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Full-width navigation */
+    }
+    nav ul li {
+        margin: 10px 0; /* Adjust for vertical stacking */
+        font-size: 1rem;
+        padding-top: 0.625em;
+        padding-bottom: 0.625em;
+        padding-left: 0.325em;
+        padding-right: 0.325em;
+    }
+    #title {
+        font-size: 4rem; /* Further reduce the title size for small screens */
+    }
+    #content, #left, #right, #message {
+        font-size: 4vw; /* Adjust font size based on the viewport width */
+    }
+    #left, #right {
+        width: 100%; /* Make each section full width */
+        margin: 20px 0; /* Add some margin between sections */
+    }
+    #right {
+        text-align: left; /* Align text to left for consistency */
+    }
+    #logo {
+        width: 90%; /* Even larger for mobile devices to maintain visibility */
+    }
+    #textCont {
+        width: 50%;
+        height: 95%;
+    }
+    #imageCont {
+        width: 25%;
+        height: 95%;
+    }
+    #space {
+        width: 15%
+    }
+}
+
+@media (max-width: 480px) {
+    #title {
+        font-size: 3rem; /* Smaller title for very small devices */
+    }
+    nav ul li {
+        font-size: 1rem; /* Smaller font size for navigation items */
+    }
+    .content, #left p, #right p {
+        font-size: 4vw; /* Small font size that scales with the viewport */
+    }
+    #logo {
+        width: 95%;
+    }
+
 }
