@@ -126,6 +126,9 @@ h1{
     padding: 0%;
     margin-bottom: 5%;
 }
+.content {
+    padding: .5%;
+}
 #left{
     width: 49%;
     margin-top: 5vh;
