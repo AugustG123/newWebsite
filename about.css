@@ -117,8 +117,9 @@ footer {
     display: flex;
     align-items: flex-start; /* Align items at the start of the cross axis */
     margin-bottom: 20px; /* Add space between sections */
-    border: 2px solid #ccc; /* Add border */
+    border: 2px solid #000000; /* Add border */
     padding: 20px; /* Add padding */
+    border-radius: 5px;
     background-color: #f9f9f9; /* Background color for text */
     opacity: 0;
     transform: translateY(20px);
@@ -182,6 +183,7 @@ footer {
     .person {
         flex-direction: column; /* Stack children vertically */
         text-align: center; /* Center-align the content for a better look on mobile */
+
     }
 
     .person img {

@@ -12,11 +12,18 @@ body {
 }
 
 form {
-    max-width: 600px;
+    max-width: 700px;
     margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    border: 2px solid #000000;
+    background-color: #cccccc77;
     border-radius: 5px;
+    width: 100%; /* Use the full width up to the max-width */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+label {
+    font-weight: bold;
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -83,9 +90,6 @@ nav ul li a {
     align-items: center;
     display: flex;
     background-color:#ffffff;
-    border-color: gray;
-    border-width: 0px;
-    border-style: solid;
 }
 #logo {
     height: auto; /* Adjust height automatically based on the width */
@@ -149,7 +153,7 @@ footer {
     background-color: #007bff1a;
     text-align: center;
     color: black;
-    padding: 20px; /* Provides padding inside the box */
+    padding: 5px; /* Provides padding inside the box */
     width: 40%; /* Adjusts width to 70% of its container */
     margin: 2% auto 20px; /* Centers the box horizontally and adds margin on the bottom */
     box-sizing: border-box; /* Includes padding and border in the box's width calculation */
@@ -183,6 +187,9 @@ footer {
         padding-bottom: 0.625em;
         padding-left: 0.325em;
         padding-right: 0.325em;
+    }
+    #intro{
+        width: 70%
     }
 }
 @media (max-width: 1024px) {

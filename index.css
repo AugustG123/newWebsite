@@ -117,7 +117,7 @@ h1{
 #messageTitle {
     padding: 3vh;
     flex-direction:row;
-    font-size: 2vw;
+    font-size: 2rem;
     color: black;
 }
 #pContent {
@@ -185,66 +185,76 @@ footer {
   
 * {box-sizing:border-box}
 
-  /* Slideshow container */
-  .slideshow-container {
-    width: 100%;
-    /*max-width: 1000px;*/
-    height: 40vw;
+/* General Styles */
+.slideshow-container {
+    width: 100%; /* You can remove max-width if you want it always full width */
+    height: auto; /* Ensures the height adjusts based on image aspect ratio */
     position: relative;
     margin: auto;
-    overflow: hidden;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
+    overflow: hidden; /* Ensures no overflow of content outside the container */
+}
+
+.mySlides {
+    position: relative;
+    display: none; /* Ensures slides are stacked and only one is shown at a time */
+    width: 100%; /* Ensures slide width matches the container */
+    height: auto; /* Adjust height based on the image's aspect ratio */
+}
+
+.mySlides img {
+    width: 100%; /* Ensures image fills the slide */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any extra space beneath the image */
+}
+
+/* Text overlay */
+    .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%; /* Cover only 30% from the left on larger screens */
+        height: 100%; /* Cover full height of the slide */
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: all 0.5s ease; /* Smooth transition for resizing */
+        color: white;
+    }
+
   /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     width: auto;
-    margin-top: -22px;
     padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+    z-index: 10; /* Ensure arrows are above all other content */
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
     background-color: #007bffaf;
   }
-  
-  /* Caption text */
-  .text {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 30%; /* Default width for larger screens */
-    height: 100%; /* Make sure it covers the whole height */
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 8px 12px;
-    box-sizing: border-box; /* Includes padding and border in width/height */
-    transition: width 0.5s ease; /* Smooth transition for resizing */
-    color: white;
-}
-  
   
   /* Fading animation */
   .fade {
@@ -352,7 +362,7 @@ footer {
     .slideshow-container {
         width: 100%;
         /*max-width: 1000px;*/
-        height: 20vh;
+        height: 40vh;
         position: relative;
         margin: auto;
       }
