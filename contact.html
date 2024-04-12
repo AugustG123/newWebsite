@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
     <title>Five Tutoring - Contact Us</title>
-</head>
+</head> 
 <body>
     <div id = "TitleNav">
         <div id="title-section">
@@ -30,15 +30,16 @@
         </ul>
     </nav>
     </div>
-
-<h1>Contact Us</h1>
+<div id = 'intro' class = 'element-to-fade'>
 
 <h2>Email us at</h2>
 <h2 class="email"><a href=mailto:“contact@fivetutoring.org”>contact@fivetutoring.org</a></h2>
 <h2>or you can <a href="sms:+15022098113">Text Us at +1(502)209-8113</a></h2>
 
 <h2> Or contact us through this form</h2>
-<form action="https://formspree.io/f/mzbnvabl" method="POST"> 
+</div>
+
+<form class = 'element-to-fade'action="https://formspree.io/f/mzbnvabl" method="POST"> 
     <label for="name">Your Name:</label>
     <input type="text" id="name" name="name" required>
 
@@ -54,6 +55,22 @@
     <button type="submit">Send</button>
 </form>
 
-
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 }); // Adjust threshold based on when you want the fade to start
+    
+        // Target elements to fade in
+        document.querySelectorAll('.element-to-fade').forEach((element) => {
+            observer.observe(element);
+        });
+    });
+    
+    </script>
 </body>
 </html>

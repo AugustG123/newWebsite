@@ -13,7 +13,7 @@
                 <img id = "logo" src="images/LOGO.png" alt="Our Logo">
             </div>
             <div id = "space"></div>
-            <div id = "textCont">
+            <div id = "textCont"> 
                 <h1 id="title">
                     Five Tutoring
                 </h1>
@@ -34,7 +34,7 @@
 <h1>Sign Up</h1>
 
 <!-- Embedded Form -->
-<div id="formContainer">
+<div class = 'element-to-fade' id="formContainer">
     <form action="https://formspree.io/f/myyrnnzr" method="POST"> 
         <label for="name">Student Name:</label>
         <input type="text" id="name" name="name" required>
@@ -116,6 +116,22 @@
             timesOtherText.disabled = !this.checked;
         });
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 }); // Adjust threshold based on when you want the fade to start
+    
+        // Target elements to fade in
+        document.querySelectorAll('.element-to-fade').forEach((element) => {
+            observer.observe(element);
+        });
+    });
+    
 </script>
 
 

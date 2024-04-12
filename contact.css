@@ -141,6 +141,35 @@ footer {
     padding: 10px;
     text-align: center;
 }
+#intro {
+    border-style: solid;
+    border-color: #007bff;
+    border-width: 5px;
+    border-radius: 15px;
+    background-color: #007bff1a;
+    text-align: center;
+    color: black;
+    padding: 20px; /* Provides padding inside the box */
+    width: 40%; /* Adjusts width to 70% of its container */
+    margin: 2% auto 20px; /* Centers the box horizontally and adds margin on the bottom */
+    box-sizing: border-box; /* Includes padding and border in the box's width calculation */
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks children elements vertically */
+    align-items: center; /* Centers children elements horizontally */
+    justify-content: center; /* Centers children elements vertically */
+}
+
+.element-to-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* State after scrolling into view */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 @media (max-width: 768px) {
     nav ul {

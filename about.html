@@ -17,7 +17,7 @@
                 <h1 id="title">
                     Five Tutoring
                 </h1>
-            </div>
+            </div> 
         </div>
     <nav>
         <ul>
@@ -99,6 +99,24 @@
 <footer>
     <a href="contact.html">Contact Us</a>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 }); // Adjust threshold based on when you want the fade to start
+    
+        // Target elements to fade in
+        document.querySelectorAll('.person').forEach((element) => {
+            observer.observe(element);
+        });
+    });
+    
+    </script>
 
 </body>
 </html>

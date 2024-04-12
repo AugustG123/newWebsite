@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     color: #333333;
 }
 
@@ -179,7 +179,7 @@ h1{
 }
 #review {
     border-style: solid;
-    border-color: #007bff;
+    border-color: #007bff; 
     border-width: 5px;
     border-radius: 15px;
     background-color: #007bff1a;

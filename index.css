@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     color: #333333;
 }
 
@@ -59,8 +59,10 @@ nav ul li a {
     border-style: solid;
 }
 #logo {
-    height: 100%;
-    width: 76%;
+    height: auto; /* Adjust height automatically based on the width */
+    width: 76%; /* Maintain the width percentage as specified */
+    object-fit: contain; /* Ensure the logo scales properly within the dimensions */
+    max-height: 100%; /* Prevent the logo from exceeding the container's height */
 }
 #textCont {
     width: 70%;
@@ -185,11 +187,12 @@ footer {
 
   /* Slideshow container */
   .slideshow-container {
-    width: 90%;
+    width: 100%;
     /*max-width: 1000px;*/
     height: 40vw;
     position: relative;
     margin: auto;
+    overflow: hidden;
   }
   
   /* Hide the images by default */
@@ -225,16 +228,22 @@ footer {
   
   /* Caption text */
   .text {
-    color: white;
-    font-size: 15px;
-    padding: 8px 12px;
-    background-color: rgba(0, 0, 0, 0.466);
     position: absolute;
-    bottom: 0px;
-    width: 30%;
-    height: 100%;
+    left: 0;
+    top: 0;
+    width: 30%; /* Default width for larger screens */
+    height: 100%; /* Make sure it covers the whole height */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-  }
+    padding: 8px 12px;
+    box-sizing: border-box; /* Includes padding and border in width/height */
+    transition: width 0.5s ease; /* Smooth transition for resizing */
+    color: white;
+}
   
   
   /* Fading animation */
@@ -340,6 +349,19 @@ footer {
     #space {
         width: 15%
     }
+    .slideshow-container {
+        width: 100%;
+        /*max-width: 1000px;*/
+        height: 20vh;
+        position: relative;
+        margin: auto;
+      }
+      .text {
+        width: 100%; /* Full width at the bottom */
+    }
+    .slideTitle {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -354,6 +376,9 @@ footer {
     }
     #logo {
         width: 95%;
+    }
+    .text {
+        font-size: 12px;
     }
 
 }
