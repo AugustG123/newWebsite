@@ -11,6 +11,14 @@ body {
     color: #333333;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
 nav {
     background-color: rgba(0, 0, 0, 1);
     color: #ffffff;

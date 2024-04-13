@@ -11,6 +11,14 @@ body {
     color: #333333;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
 nav {
     background-color: rgba(0, 0, 0, 1);
     color: #ffffff;
@@ -187,24 +195,38 @@ footer {
 
 /* General Styles */
 .slideshow-container {
-    width: 100%; /* You can remove max-width if you want it always full width */
-    height: auto; /* Ensures the height adjusts based on image aspect ratio */
+    width: 100%;
     position: relative;
     margin: auto;
-    overflow: hidden; /* Ensures no overflow of content outside the container */
+    overflow: hidden; /* This prevents any overflow from the slides */
+    border-width: 0px;
+    border-style: solid;
+    border-color: #000000;
 }
 
 .mySlides {
-    position: relative;
-    display: none; /* Ensures slides are stacked and only one is shown at a time */
-    width: 100%; /* Ensures slide width matches the container */
-    height: auto; /* Adjust height based on the image's aspect ratio */
+    display: none; /* Hide all slides by default */
+    position: relative; /* Relative positioning for absolute positioning inside */
+    width: 100%; /* Slide width fully responsive to the container width */
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
 }
 
 .mySlides img {
-    width: 100%; /* Ensures image fills the slide */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Removes any extra space beneath the image */
+    width: 100%; /* Image fills the slide */
+    display: block; /* Removes bottom margin/padding that affects layout */
+    height: auto;
+}
+
+.slideshow-container, .mySlides {
+    margin: 0;
+    padding: 0;
+}
+
+/* Additionally, check elements immediately below the slideshow */
+#content {
+    margin-top: 0; /* Remove any top margin that could create a gap */
 }
 
 /* Text overlay */
