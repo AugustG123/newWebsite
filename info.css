@@ -237,6 +237,17 @@ h1{
         padding-left: 0.325em;
         padding-right: 0.325em;
     }
+    #logo {
+        width: 90%; /* Even larger for mobile devices to maintain visibility */
+    }
+    #textCont {
+        width: 50%;
+        height: 95%;
+    }
+    #imageCont {
+        width: 25%;
+        height: 95%;
+    }
     #title {
         font-size: 4rem; /* Further reduce the title size for small screens */
     }
@@ -249,17 +260,6 @@ h1{
     }
     #right {
         text-align: left; /* Align text to left for consistency */
-    }
-    #logo {
-        width: 90%; /* Even larger for mobile devices to maintain visibility */
-    }
-    #textCont {
-        width: 50%;
-        height: 95%;
-    }
-    #imageCont {
-        width: 25%;
-        height: 95%;
     }
     #space {
         width: 15%

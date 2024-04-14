@@ -1,10 +1,10 @@
 .container {
-    width: 100%; /* Use percentage or vw for flexible width */
-    max-width: 1200px; /* Optional, for large screens */
-    margin: auto; /* Center the container */
+    width: 100%; /* Full width to use available space */
+    max-width: 1200px; /* Maximum width to constrain the container size */
+    margin: auto; /* Center the container horizontally */
     padding: 20px; /* Padding around the content */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -169,9 +169,13 @@ h1{
 }
 #content{
     padding: 3vh;
-    flex-direction:row;
-    font-size: 2vw;
+    font-size: 2vw; /* Adjust if necessary to maintain responsive font size */
     color: black;
+    display: flex; /* Using flexbox to manage children */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    width: 100%;
+    clear: both; /* Clears any previous floats that might affect layout */
 }
 footer {
     margin-top: 20px;
@@ -194,29 +198,24 @@ footer {
 * {box-sizing:border-box}
 
 /* General Styles */
-.slideshow-container {
-    width: 100%;
-    position: relative;
-    margin: auto;
-    overflow: hidden; /* This prevents any overflow from the slides */
-    border-width: 0px;
-    border-style: solid;
-    border-color: #000000;
+.slideshow-container, .mySlides img {
+    width: 90%;
+    max-width: 1000px; /* Use full width to ensure responsiveness */
+    margin: 20px auto; /* Automatically margin for horizontal centering */
+    position: relative; /* Keeps it positioned relative to its container */
+    overflow: hidden; /* Hides anything outside the bounds of the container */
 }
 
 .mySlides {
-    display: none; /* Hide all slides by default */
-    position: relative; /* Relative positioning for absolute positioning inside */
+    display: none; /* Hide all slides initially */
+    position: relative; /* Relative to the slideshow container */
     width: 100%; /* Slide width fully responsive to the container width */
-    border-width: 2px;
-    border-style: solid;
-    border-color: #000000;
 }
 
 .mySlides img {
     width: 100%; /* Image fills the slide */
-    display: block; /* Removes bottom margin/padding that affects layout */
-    height: auto;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures no extra space below the image */
 }
 
 .slideshow-container, .mySlides {
@@ -229,48 +228,44 @@ footer {
     margin-top: 0; /* Remove any top margin that could create a gap */
 }
 
-/* Text overlay */
-    .text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 30%; /* Cover only 30% from the left on larger screens */
-        height: 100%; /* Cover full height of the slide */
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 20px;
-        box-sizing: border-box;
-        transition: all 0.5s ease; /* Smooth transition for resizing */
-        color: white;
-    }
+.text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* More opaque for better readability */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    text-align: left; /* Align text to the left */
+    font-size: calc(12px + 0.5vw); /* Responsive font size */
+}
 
   /* Next & previous buttons */
   .prev, .next {
-    cursor: pointer;
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    position: absolute;
     width: auto;
     padding: 16px;
+    margin-top: -22px; /* Half the height of the button for center alignment */
     color: white;
     font-weight: bold;
     font-size: 18px;
+    transition: background-color 0.6s ease;
     user-select: none;
-    z-index: 10; /* Ensure arrows are above all other content */
+    z-index: 10; /* Above all */
 }
-
 .prev {
-    left: 0;
-    border-radius: 0 3px 3px 0;
+    left: 10px; /* Slight margin from the left edge */
 }
-
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: 10px; /* Slight margin from the right edge */
 }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -342,6 +337,30 @@ footer {
 }
 
 @media (max-width: 768px) {
+    /* Full width text box for smaller screens */
+    .text {
+        width: 100%;
+        top: auto;
+        bottom: 0;
+        transform: translateY(0);
+        text-align: center;
+        font-size: calc(10px + 3vw); /* Larger font size for better visibility */
+    }
+
+    /* Adjust buttons for smaller screens */
+    .prev, .next {
+        width: 44px; /* Larger touch targets */
+        height: 44px;
+        font-size: 24px; /* Larger icons */
+        padding: 10px;
+    }
+    .slideshow-container, .mySlides img {
+        width: 100%;
+        max-width: 1000px; /* Use full width to ensure responsiveness */
+        margin: 20px auto; /* Automatically margin for horizontal centering */
+        position: relative; /* Keeps it positioned relative to its container */
+        overflow: hidden; /* Hides anything outside the bounds of the container */
+    }
     nav ul {
         flex-direction: column;
         align-items: center; /* Full-width navigation */
@@ -354,19 +373,6 @@ footer {
         padding-left: 0.325em;
         padding-right: 0.325em;
     }
-    #title {
-        font-size: 4rem; /* Further reduce the title size for small screens */
-    }
-    #content, #left, #right, #message {
-        font-size: 4vw; /* Adjust font size based on the viewport width */
-    }
-    #left, #right {
-        width: 100%; /* Make each section full width */
-        margin: 20px 0; /* Add some margin between sections */
-    }
-    #right {
-        text-align: left; /* Align text to left for consistency */
-    }
     #logo {
         width: 90%; /* Even larger for mobile devices to maintain visibility */
     }
@@ -377,22 +383,6 @@ footer {
     #imageCont {
         width: 25%;
         height: 95%;
-    }
-    #space {
-        width: 15%
-    }
-    .slideshow-container {
-        width: 100%;
-        /*max-width: 1000px;*/
-        height: 40vh;
-        position: relative;
-        margin: auto;
-      }
-      .text {
-        width: 100%; /* Full width at the bottom */
-    }
-    .slideTitle {
-        font-size: 25px;
     }
 }
 
