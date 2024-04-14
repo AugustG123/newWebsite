@@ -112,14 +112,14 @@ h1{
     font-size: 3rem;
 }
 #message{
-    border-width: 5px;
-    border-color: #007bff;
-    border-radius: 5px;
-    border-top-style: solid;
-    background-color: #007bff1a;
     padding: 3vh;
     flex-direction:row;
     font-size: 2vw;
+    background-color: #cccccc;
+    border-width: 5px;
+    border-color: #000000;
+    border-radius: 10px;
+    border-style: solid;
     color: black;
 }
 #messageTitle {
@@ -146,28 +146,28 @@ h1{
 #left{
     width: 49%;
     margin-top: 5vh;
-    border-width: 5px;
-    border-color: #007bff;
-    border-radius: 5px;
-    border-top-style: solid;
     float: left;
     margin-left: 0%;
     display: inline-block;
-    background-color: #007bff1a;
+    background-color: #cccccc;
+    border-width: 5px;
+    border-color: #000000;
+    border-radius: 10px;
+    border-style: solid;
     color: black;
 }
 #right{
     width: 49%;
     margin-top: 5vh;
-    border-width: 5px;
-    border-color: #007bff;
-    background-color: #007bff1a;
-    border-radius: 5px;
     margin-right: 0%;
-    border-top-style: solid;
     display: inline-block;
     float: right;
     text-align: right;
+    background-color: #cccccc;
+    border-width: 5px;
+    border-color: #000000;
+    border-radius: 10px;
+    border-style: solid;
     color: black;
 }
 #content{
@@ -211,7 +211,7 @@ h1{
 }
 @media (max-width: 1024px) {
     #title {
-        font-size: 5rem; /* Smaller font size for the title on smaller desktops and tablets */
+        font-size: 3rem; /* Smaller font size for the title on smaller desktops and tablets */
     }
     #content, #left, #right {
         font-size: 1.5rem; /* Larger font size for better readability */

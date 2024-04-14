@@ -154,13 +154,7 @@ footer {
     text-align: center;
 }
 #intro {
-    border-style: solid;
-    border-color: #007bff;
-    border-width: 5px;
-    border-radius: 15px;
-    background-color: #007bff1a;
     text-align: center;
-    color: black;
     padding: 5px; /* Provides padding inside the box */
     width: 40%; /* Adjusts width to 70% of its container */
     margin: 2% auto 20px; /* Centers the box horizontally and adds margin on the bottom */
@@ -169,6 +163,12 @@ footer {
     flex-direction: column; /* Stacks children elements vertically */
     align-items: center; /* Centers children elements horizontally */
     justify-content: center; /* Centers children elements vertically */
+    background-color: #cccccc77;
+    border-width: 5px;
+    border-color: #000000;
+    border-radius: 10px;
+    border-style: solid;
+    color: black;
 }
 
 .element-to-fade {
