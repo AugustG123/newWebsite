@@ -117,7 +117,6 @@ footer {
     text-align: center;
 }
 
-
 /* Styling individual sections */
 /* about.css */
 
@@ -162,7 +161,25 @@ footer {
 .person-info p {
     margin: 0; /* Reset margin for paragraph */
     font-size: 32px; 
+    color: #333;
 }
+
+.accomplishments h2 {
+    font-size: 24px;  /* Larger text for the header */
+    color: #333;      /* Dark grey color for emphasis */
+}
+
+.accomplishments ul {
+    margin: 10px 0;   /* Vertical spacing */
+    padding-left: 20px; /* Indent list items */
+}
+
+.accomplishments li {
+    font-size: 22px;  /* Readable text size */
+    color: #666;      /* Lighter text color */
+    color: #000000; 
+}
+
 
 /* State after scrolling into view */
 .fade-in {
@@ -212,6 +229,13 @@ footer {
     .person-info p {
         margin: 0; /* Reset margin for paragraph */
         font-size: 16px; 
+    }
+    .person-info h1, .accomplishments h2 {
+        font-size: 16px; /* Smaller font size for smaller screens */
+    }
+    
+    .accomplishments li {
+        font-size: 14px; /* Smaller font size for list items */
     }
 }
 @media (min-width: 769px) and (max-width: 1280px) {
