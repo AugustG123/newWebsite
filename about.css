@@ -116,6 +116,16 @@ footer {
     padding: 10px;
     text-align: center;
 }
+footer a, footer p {
+    display: inline-block; /* Aligns elements side by side */
+    color: white;
+    font-size: 20px;
+    margin: 0 10px; /* Adds horizontal spacing between elements */
+}
+
+footer p {
+    margin: 0; /* Removes default paragraph margins for alignment */
+}
 
 /* Styling individual sections */
 /* about.css */
