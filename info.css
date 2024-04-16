@@ -112,11 +112,10 @@ h1{
     font-size: 3rem;
 }
 #message{
-    border-width: 5px;
-    border-color: #007bff;
-    border-radius: 5px;
-    border-top-style: solid;
-    background-color: #007bff1a;
+    border: 2px solid #000000;
+    background-color: #cccccc77;
+    border-radius: 15px;
+    color: black;
     padding: 3vh;
     flex-direction:row;
     font-size: 2vw;
@@ -146,28 +145,29 @@ h1{
 #left{
     width: 49%;
     margin-top: 5vh;
-    border-width: 5px;
-    border-color: #007bff;
-    border-radius: 5px;
-    border-top-style: solid;
     float: left;
     margin-left: 0%;
     display: inline-block;
     background-color: #007bff1a;
     color: black;
+    border: 2px solid #000000;
+    background-color: #cccccc77;
+    border-radius: 15px;
+    color: black;
 }
 #right{
     width: 49%;
     margin-top: 5vh;
-    border-width: 5px;
-    border-color: #007bff;
-    background-color: #007bff1a;
     border-radius: 5px;
     margin-right: 0%;
     border-top-style: solid;
     display: inline-block;
     float: right;
     text-align: right;
+    color: black;
+    border: 2px solid #000000;
+    background-color: #cccccc77;
+    border-radius: 15px;
     color: black;
 }
 #content{
@@ -233,7 +233,7 @@ h1{
         margin: 10px 0; /* Adjust for vertical stacking */
         font-size: 1rem;
         padding-top: 0.625em;
-        padding-bottom: 0.625em;
+        padding-bottom: 0.625em; 
         padding-left: 0.325em;
         padding-right: 0.325em;
     }

@@ -18,7 +18,7 @@ html, body {
     padding: 0;
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
-
+ 
 form {
     max-width: 700px;
     margin: 20px auto;

@@ -248,7 +248,7 @@ footer {
     color: white;
     text-align: left; /* Align text to the left */
     font-size: calc(12px + 0.5vw); /* Responsive font size */
-    overflow: auto;
+    overflow: hidden;
 }
 .slideTitle {
     font-size: calc(18px + 1vw); /* Combines a base size with a viewport-relative size */
