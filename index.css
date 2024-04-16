@@ -244,8 +244,13 @@ footer {
     color: white;
     text-align: left; /* Align text to the left */
     font-size: calc(12px + 0.5vw); /* Responsive font size */
+    overflow: auto;
 }
-
+.slideTitle {
+    font-size: calc(18px + 1vw); /* Combines a base size with a viewport-relative size */
+    color: #ffffff; /* Adjust the color if needed */
+    text-align: center; /* Ensures the title is centered */
+}
   /* Next & previous buttons */
   .prev, .next {
     top: 50%;
@@ -334,6 +339,12 @@ footer {
     nav ul li {
         font-size: 1.2rem; /* Increase the font size for navigation links */
     }
+    .text {
+        font-size: calc(10px + .5vw); 
+    }
+    .slideTitle {
+        font-size: calc(16px + 1.5vw); /* Slightly larger on smaller desktops */
+    }
 }
 
 @media (max-width: 768px) {
@@ -344,9 +355,11 @@ footer {
         bottom: 0;
         transform: translateY(0);
         text-align: center;
-        font-size: calc(10px + 3vw); /* Larger font size for better visibility */
+        font-size: calc(10px + 1.5vw); 
     }
-
+    .slideTitle {
+        font-size: calc(14px + 2vw); /* Even larger on tablets */
+    }
     /* Adjust buttons for smaller screens */
     .prev, .next {
         width: 44px; /* Larger touch targets */
@@ -399,8 +412,12 @@ footer {
     #logo {
         width: 95%;
     }
+    .slideTitle {
+        font-size: calc(10px + 2.5vw); /* Largest on mobile devices for better readability */
+    }
     .text {
-        font-size: 12px;
+        font-size: calc(6px + 2vw);  /* Larger font size for very small screens */
+        padding: 10px;
     }
 
 }
