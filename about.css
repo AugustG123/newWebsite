@@ -52,12 +52,12 @@ nav ul li a {
 #title-section {
     height: 25vh;
     width: 100%;
-    background-image: url("images/stock\ image.jpg");
+    background-image: url("images/bannerCrop.png");
     margin-bottom: 0vh; /* Adjust or remove if not needed */
     padding: auto; /* Adjust based on your design */
     background-size: cover;
     background-position: center;
-    color: white;
+    color: black;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -94,12 +94,18 @@ nav ul li a {
     font-size: 8rem; /* Adjust this value as needed */
     margin: 0;
     padding: 0; /* Remove or adjust padding */
-    color: #ffffff;
+    color: black;
     margin-top: -0%;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700; /* Use a heavier weight for titles */
-
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Use a heavier weight for titles */
+    background-color: #ffffffd0;
+    border-color: #333333;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
 }
 h1 {
     color: #333333;
