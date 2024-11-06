@@ -1,116 +1,105 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <title>Five Tutoring - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <div id = "TitleNav">
-    <div id="title-section">
-        <div id = "imageCont">
-            <img id = "logo" src="images/LOGOW.png" alt="Our Logo">
+
+<body class="loading">
+    <!-- Header Section -->
+    <header id="header" class="font-energetic min-h-[60px] flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-black text-sm py-3 sm:py-0 border-b-[1px] border-solid border-gray-600">
+        <nav class="relative max-w-screen-2xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between flex-grow-1">
+                <a class="flex text-xl gap-2 items-center justify-center font-semibold text-white" aria-label="Brand" href="/">
+                    <span class="text-[16px] md:text-[20px] leading-none">Five Tutoring</span>
+                </a>
+                <div class="sm:hidden">
+                    <button type="button" class="hs-collapse-toggle size-9 ... (Toggle Button Code) ... ">
+                </div>
+            </div>
+            <div id= "navbar-collapse-with-animation"  class = "hs-collapse overflow-hidden transition-all duration-300 sm:block">
+                <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
+                    <!-- Navigation Links -->
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="index.html">Home</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="about.html">About Us</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="info.html">Services</a>
+                    <a class="font-medium text-white hover:text-orange-500 sm:py-6" href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero-4h4mkS" class="text-orange-100 font-energetic" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.pexels.com/photos/5676744/pexels-photo-5676744.jpeg'); background-size: cover; background-position: center;">
+        <div class="container max-w-screen-2xl mx-auto flex px-5 py-24 pt-64 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-orange-100">Empowering Students for Success in Every Subject</h1>
+                <p class="mb-8 leading-relaxed">Personalized tutoring for math, science, ACT/SAT prep, and more.</p>
+                <div class="flex justify-center">
+                    <a class="inline-flex text-orange-100 bg-orange-500 hover:bg-orange-700 border-0 py-2 px-6 focus:outline-none rounded text-lg" href="/contact">Get Started</a>
+                </div>
+            </div>
         </div>
-        <div id = "space"></div>
-        <div id = "textCont">
-            <h1 id="title">
-                Five Tutoring
-            </h1>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features-ujtNMT" class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto font-energetic bg-white">
+        <div class="relative bg-white max-w-screen-2xl mx-auto">
+            <div class="relative flex w-full flex-col lg:flex-row items-center justify-center gap-4 lg:gap-12 flex-col lg:flex-row-reverse">
+                <div class="lg:w-1/2">
+                    <h2 class="text-2xl text-black font-bold sm:text-3xl">Comprehensive Tutoring Services</h2>
+                    <nav aria-label="Tabs" role="tablist">
+                        <button class="p-4 md:p-5 rounded-xl text-start"><span>Math & Science Mastery - Fundamentals to advanced concepts.</span></button>
+                        <button class="p-4 md:p-5 rounded-xl text-start"><span>Exam Prep Experts - ACT/SAT, AP exams, and MSTC prep.</span></button>
+                        <button class="p-4 md:p-5 rounded-xl text-start"><span>Homework Help & Beyond - Boosting confidence in all subjects.</span></button>
+                    </nav>
+                </div>
+                <div class="lg:w-1/2">
+                    <img class="shadow-xl rounded-xl" src="https://images.pexels.com/photos/9301876/pexels-photo-9301876.jpeg" alt="Tutoring Image">
+                </div>
+            </div>
         </div>
-    </div>
-<nav>
-    <ul>
-        <li style = "font-weight: bold;"><a href="index.html">Home</a></li>
-        <li><a href="info.html">Info</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-    </ul>
-</nav>
-</div>
+    </section>
 
-<div id="content">
-    <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <img src="images/stockImage2.jpg">
-          <div class="text">
-            <h1 class = 'slideTitle'> What we Believe</h1>
-            <p>We firmly believe that every student deserves the opportunity to receive exemplary supplementary education. This is why we offer our services at the competitive price of $13 per hour.</p>
-          </div>
+    <!-- Catalog Section -->
+    <section id="catalog-Sl6RtK" class="bg-black font-energetic px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class="max-w-screen-2xl flex items-center justify-center mx-auto flex-col gap-4">
+            <h2 class="text-2xl font-bold tracking-tight text-gray-900 text-white">Our Tutoring Programs</h2>
+            <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Repeatable Catalog Item -->
+                <div class="group relative cursor-pointer">
+                    <img src="https://images.pexels.com/photos/8197497/pexels-photo-8197497.jpeg" alt="Math" class="rounded-md">
+                    <h3 class="text-sm text-white">Math</h3>
+                    <p class="font-medium text-base text-orange-500">Contact for pricing</p>
+                </div>
+                <!-- Add additional catalog items similarly -->
+            </div>
         </div>
-      
-        <div class="mySlides fade">
-          <img src="images/stock image.jpg">
-          <div class="text">
-            <h1 class = "slideTitle"> What we offer</h1>
-            <p> We offer one-on-one personalized lessons which are catered to the needs of each student. This environment allows the student to freely ask questions and receive the full attention of the tutor. </p>
-            </div> 
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-white font-energetic p-4 sm:pt-10 lg:p-12 border-t border-gray-600">
+        <div class="mx-auto max-w-screen-2xl">
+            <div class="flex flex-col md:flex-row gap-4 pt-10">
+                <div>
+                    <a href="/" aria-label="logo"><p class="text-xl font-bold text-black">Five Tutoring</p></a>
+                    <p class="text-gray-500">Empowering students for success in every subject, every exam.</p>
+                </div>
+                <nav>
+                    <a href="/" class="text-gray-500 hover:text-orange-500">Home</a>
+                    <a href="/about" class="text-gray-500 hover:text-orange-500">About Us</a>
+                    <a href="/services" class="text-gray-500 hover:text-orange-500">Services</a>
+                    <a href="/pricing" class="text-gray-500 hover:text-orange-500">Pricing</a>
+                    <a href="/testimonials" class="text-gray-500 hover:text-orange-500">Testimonials</a>
+                    <a href="/contact" class="text-gray-500 hover:text-orange-500">Contact Us</a>
+                </nav>
+            </div>
         </div>
-      
-        <div class="mySlides fade">
-          <img src="images/slide3.webp">
-          <div class="text">
-            <h1 class = 'slideTitle'> Why us?</h1>
-            <p>
-              We all have notable academic achievements and extensive tutoring experience. Additionally, the majority of the money you pay will be donated towards cancer research funding, meaning that by signing up you are simulataneously receiving high-quality education and supporting the battle against cancer.
-            </p>
-          </div>
-        </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      </div>
-      <br>
-
-</div>
-
-<script>
-    let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-            }
-        });
-    }, { threshold: 0.1 }); // Adjust threshold based on when you want the fade to start
-
-    // Target elements to fade in
-    document.querySelectorAll('.element-to-fade').forEach((element) => {
-        observer.observe(element);
-    });
-});
-
-</script>
-
+    </footer>
 </body>
+
 </html>
